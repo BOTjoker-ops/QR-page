@@ -1,4 +1,4 @@
-// http://127.0.0.1:5500/?name=Stijn_van_der_Pouw&LinkedIn=https://www.linkedin.com/in/stijnvdpouw/&Facebook=https://www.facebook.com/stijn.vanderpouw/&Instagram=https://www.instagram.com/stijnvdpouw/#
+// http://127.0.0.1:5500/?Name=Stijn_van_der_Pouw&LinkedIn=https://www.linkedin.com/in/stijnvdpouw/&Facebook=https://www.facebook.com/stijn.vanderpouw/&Instagram=https://www.instagram.com/stijnvdpouw/#
 
 const platformIcons = {
     LinkedIn: '/img/icons/LinkedIn-icon.png',
@@ -11,6 +11,7 @@ function getIcon(platform){
         return platformIcons[platform]
     }
     else{
+        // needs to return a img some way or another
         return ''
     }
 }        
@@ -18,9 +19,12 @@ function getIcon(platform){
 $(function () {
             var vars = []
             var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            if (hashes.length <= 1){
+                hashes = ["Name=Stijn_van_der_Pouw", "LinkedIn=https://www.linkedin.com/in/stijnvdpouw/", "Facebook=https://www.facebook.com/stijn.vanderpouw/", "Instagram=https://www.instagram.com/stijnvdpouw/#"];
+            }
             for (var i = 0; i < hashes.length; i++) {
                 pair = hashes[i].split('=');
-                if(pair[0] == "name"){
+                if(pair[0] == "Name"){
                     document.getElementById("qr-name").innerHTML = pair[1]
                 }
                 else{
@@ -35,7 +39,7 @@ $(function () {
                     // <small>And some small print.</small>
                     '</a>'
                 )
-                console.log(pair[0] + ' loaded');
+                console.log('[server] found: ' + pair[0]);
                 }
 
             }

@@ -20,13 +20,28 @@
     <div class="text-center">
         <img id="qr-photo" src="./img/icons/person-icon.png" class="rounded"
             alt="...">
-        <div id="qr-name">-</div>
+        <div id="qr-name">-- Sample --</div>
     </div>
 
     <!-- CARDS -->
     <div id="links" class="list-group container-md">
     </div>
-    
+   
+    <!-- FORM -->
+    <form id="cardForm"class="form-inline">
+        <input type="Name" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Name" readonly>
+        <div class="input-group mb-2 mr-sm-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">@</div>
+          </div>
+          <input type="displayName" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Display name">
+        </div>
+      
+        <button id="newRowButton" onclick="newRow()" class="btn btn-primary mb-2">Add link</button>
+        
+      </form>
+
+       
     <script src="index.js" type="text/javascript"></script>
     <script src="qr-display.js" type="text/javascript"></script>
 

@@ -23,7 +23,6 @@ function makeURL() {
     $(inputs).each(function (e) {
         data.push($(this).val());
     })
-
     data.forEach(function (x, i) {
         if (i != 0) {
             if (i % 2 == 0 && x != '') {

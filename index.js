@@ -9,7 +9,7 @@ function newRow() {
         ' <div class="w-100"></div>'
     )
     $("#initButton").replaceWith(
-        '<button id="submitButton" type="submit" onclick="makeURL()" class="btn btn-primary">Generate QR-code</button>'
+        '<br>'
     )
 }
 
@@ -26,10 +26,10 @@ function makeURL() {
 
     data.forEach(function (x, i) {
         if (i != 0) {
-            if (i % 2 == 0) {
+            if (i % 2 == 0 && x != '') {
                 validUrl = validUrl.concat(x + '=');
             }
-            if (i % 2 != 0) {
+            if (i % 2 != 0 && x != '') {
                 validUrl = validUrl.concat(x + '&');
             }
         } else {
@@ -43,9 +43,5 @@ function makeURL() {
     $("#submitButton").replaceWith(
         '<button id="initButton" onclick="newRow()" class="btn btn-primary">Add link</button>'
     )
-    generateQR(validUrl);
-}
-
-function generateQR(url) {
-    console.log(url);
+        return validUrl
 }

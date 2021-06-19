@@ -18,7 +18,7 @@ function getIcon(platform) {
 $(function () {
     var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
     if (hashes.length <= 1) {
-        hashes = ["name=Stijn_van_der_Pouw", "LinkedIn=https://www.linkedin.com/in/stijnvdpouw/", "Facebook=https://www.facebook.com/stijn.vanderpouw/", "Instagram=https://www.instagram.com/stijnvdpouw/&"];
+        hashes = ["name=Stijn_van_der_Pouw", "LinkedIn=https://www.linkedin.com/in/stijnvdpouw/", "Facebook=https://www.facebook.com/stijn.vanderpouw/&"];
     }
     for (var i = 0; i < hashes.length - 1; i++) {
         pair = hashes[i].split('=');

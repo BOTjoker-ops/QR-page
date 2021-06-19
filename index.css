@@ -1,18 +1,18 @@
-#nameDisplay{
+#nameDisplay {
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 15px;
     margin-top: -50px;
 }
 
-#divForm{
+#divForm {
     margin-left: 25%;
     margin-right: 25%;
     position: relative;
 
 }
 
-.cardTitle{
+.cardTitle {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 14%;
     padding-top: 4%;

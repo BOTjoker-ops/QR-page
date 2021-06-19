@@ -1,9 +1,9 @@
 // http://127.0.0.1:5500/?name=Stijn_van_der_Pouw&LinkedIn=https://www.linkedin.com/in/stijnvdpouw/&Facebook=https://www.facebook.com/stijn.vanderpouw/&Instagram=https://www.instagram.com/stijnvdpouw/&
 
 const platformIcons = {
-    LinkedIn: '/img/icons/LinkedIn-icon.png',
-    Facebook: '/img/icons/facebook-logo.png',
-    Instagram: '/img/icons/instagram-logo.png',
+    LinkedIn: '/img/LinkedIn-icon.png',
+    Facebook: '/img/facebook-logo.png',
+    Instagram: '/img/instagram-logo.png',
 }
 
 function getIcon(label, i) {

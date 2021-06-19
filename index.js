@@ -1,13 +1,13 @@
 function newRow() {
     $('#newEntery').remove();
     $(".form-inline").append(
-        '<input type="title" class="form-control mb-2 mr-sm-2 injectedForm" placeholder="Title">' +
-        '<div class="input-group-text injectedForm">@</div>' +
-        '<input type="link" class="form-control injectedForm" placeholder="www">' +
-        '<button id="newEntery" onclick="newRow()" class="btn btn-primary mb-2 injectedForm">Add link</button>'
+        '<input type="title" class="form-control col injectedForm" placeholder="Title">' +
+        '<input type="link" class="form-control col injectedForm" placeholder="www">' +
+        '<button id="newEntery" onclick="newRow()" class="btn btn-primary injectedForm">Add link</button>' +
+        ' <div class="w-100"></div>'
     )
-    $("#newRowButton").replaceWith(
-        '<button id="submitButton" type="submit" onclick="submitForm()" class="btn btn-primary mb-2">Submit</button>'
+    $("#initButton").replaceWith(
+        '<button id="submitButton" type="submit" onclick="submitForm()" class="btn btn-primary">Generate QR-code</button>'
     )
 }
 
@@ -26,5 +26,6 @@ function submitForm() {
     $("#submitButton").replaceWith(
        '<button id="newRowButton" onclick="newRow()" class="btn btn-primary mb-2">Add link</button>'
         )
-
+    // generateQR(values);
 }
+

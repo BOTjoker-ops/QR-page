@@ -25,14 +25,14 @@ $(function () {
             for (var i = 0; i < hashes.length; i++) {
                 pair = hashes[i].split('=');
                 if(pair[0] == "Name"){
-                    document.getElementById("qr-name").innerHTML = pair[1]
+                    document.getElementById("nameDisplay").innerHTML = pair[1]
                 }
                 else{
                 $("#links").append(
-                    '<a href="' + pair[1] + '" class="list-group-item list-group-item-action" aria-current="true">'+
-                        '<div class="d-flex w-100 justify-content-between">'+
-                    '<img src=' + getIcon(pair[0]) + ' class="rounded float-left platformIcon" alt="...">'+
-                        '<h5 class="mb-1">' + pair[0] + '</h5>' +
+                    '<a href="' + pair[1] + '" class="list-group-item list-group-item-action" target="_blank" aria-current="true">'+
+                        '<div class="d-flex justify-content-between">'+
+                    '<img src=' + getIcon(pair[0]) + ' class="rounded float-left platformIcon">'+
+                        '<h5 class="mb-1 cardTitle">' + pair[0] + '</h5>' +
                     //     <small>3 days ago</small>
                     //     </div>
                     // <p class="mb-1">Some placeholder content in a paragraph.</p>

@@ -22,22 +22,22 @@ $(function () {
     }
     
     for (var i = 0; i < hashes.length - 1; i++) {
-        pair = hashes[i].split('=');
-        if (pair[0] == "name") {
-            document.getElementById("nameDisplay").innerHTML = decodeURI(pair[1]);
+        cardInfo = hashes[i].split('=');
+        if (cardInfo[0] == "name") {
+            document.getElementById("nameDisplay").innerHTML = decodeURI(cardInfo[1]);
         } else {
             $("#links").append(
-                '<a href="' + pair[1] + '" class="list-group-item list-group-item-action" target="_blank" aria-current="true">' +
+                '<a href="' + cardInfo[1] + '" class="list-group-item list-group-item-action" target="_blank" aria-current="true">' +
                 '<div class="d-flex justify-content-between">' +
-                '<img id="' + i + '" src=' + getIcon(pair[0], i) + ' class="rounded float-left platformIcon">' +
-                '<h5 class="mb-1 cardTitle">' + decodeURI(pair[0]) + '</h5>' +
+                '<img id="' + i + '" src=' + getIcon(cardInfo[0], i) + ' class="rounded float-left platformIcon">' +
+                '<h5 class="mb-1 cardTitle">' + decodeURI(cardInfo[0]) + '</h5>' +
                 //     <small>3 days ago</small>
                 //     </div>
                 // <p class="mb-1">Some placeholder content in a paragraph.</p>
                 // <small>And some small print.</small>
                 '</a>'
             )
-            console.log('[server] found: ' + pair[0]);
+            console.log('[server] found: ' + cardInfo[0]);
         }
     }
 });

@@ -24,6 +24,7 @@ function makeURL() {
         data.push($(this).val());
     })
     data.forEach(function (x, i) {
+        x = encodeURI(x)
         if (i != 0) {
             if (i % 2 == 0 && x != '') {
                 validUrl = validUrl.concat(x + '=');

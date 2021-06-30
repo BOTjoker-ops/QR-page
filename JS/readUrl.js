@@ -11,7 +11,7 @@ function getIcon(label, i) {
         return platformIcons[label]
     } else {
         // needs to return a img some way or another
-        return ""
+        return "./img/person-icon.png"
     }
 }
 

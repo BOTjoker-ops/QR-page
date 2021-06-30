@@ -1,8 +1,8 @@
-#nameDisplay {
+.profileInfo {
     font-size: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana;
     margin-bottom: 15px;
-    margin-top: -50px;
+    margin-top: 2%;
 }
 
 #divForm {

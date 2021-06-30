@@ -613,7 +613,7 @@
      QRCode.CorrectLevel = QRErrorCorrectLevel;
  })();
 
-
+// Own inplementation
  $('.generate-qr-code').on('click', function(){
 
     // Clear Previous QR Code

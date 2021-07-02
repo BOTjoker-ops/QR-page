@@ -363,6 +363,7 @@
              this._bIsPainted = false;
              this._elImage = document.createElement("img");
              this._elImage.alt = "Scan me!";
+             this._elImage.className = "qr-img copyable";
              this._elImage.style.display = "none";
              this._el.appendChild(this._elImage);
              this._bSupportDataURI = null;

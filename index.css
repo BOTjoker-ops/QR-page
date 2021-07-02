@@ -22,6 +22,7 @@
     padding: 0 !important;
 }
 
+
 /* QR generator */
 
 .qr-code-generator {
@@ -29,6 +30,10 @@
     margin: 0 auto;
     }
     
+    .qr-img {
+        padding-left: 30%;
+    }
+
     .qr-code-generator * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -38,7 +43,7 @@
     #qrcode {
     width: 128px;
     height: 128px;
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
     }
     

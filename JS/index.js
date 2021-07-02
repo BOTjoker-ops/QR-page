@@ -4,7 +4,7 @@ function newRow() {
     $('#newEntry').remove();
     $(".form-inline").append(
         '<input type="label" class="form-control col injectedForm" placeholder="Label">' +
-        '<input type="link" class="form-control col injectedForm" placeholder="www">' +
+        '<input type="link" class="form-control col injectedForm" placeholder="www" value="https://">' +
         '<button id="newEntry" onclick="newRow()" class="btn btn-primary injectedForm">Add link</button>' +
         ' <div class="w-100"></div>'
     )

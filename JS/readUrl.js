@@ -1,4 +1,4 @@
-// http://127.0.0.1:5500/?name=Stijn%20van%20der%20Pouw&LinkedIn=https://www.linkedin.com/in/stijnvdpouw/&Facebook=https://www.facebook.com/stijn.vanderpouw/&Instagram=https://www.instagram.com/stijnvdpouw/&
+// http://192.168.178.55/QR-page/?name=Stijn%20van%20der%20Pouw&LinkedIn=https://www.linkedin.com/in/stijnvdpouw/&Facebook=https://www.facebook.com/stijn.vanderpouw/&Instagram=https://www.instagram.com/stijnvdpouw/&
 
 $(function () {
     var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');

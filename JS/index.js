@@ -1,10 +1,13 @@
-const domainName = '127.0.0.1:5500'
+var port = location.port || (location.protocol === 'https:' ? '443' : '80');
+var publicIp = '127.0.0.1'
+const domainName = publicIp + ':' + port
 
 function newRow() {
     $('#newEntry').remove();
     $(".form-inline").append(
+        '<br class="injectedForm">' + 
         '<input type="label" class="form-control col injectedForm" placeholder="Label">' +
-        '<input type="link" class="form-control col injectedForm" placeholder="www" value="https://">' +
+        '<input type="link" class="form-control col injectedForm" value="https://">' +
         '<button id="newEntry" onclick="newRow()" class="btn btn-primary injectedForm">Add link</button>' +
         ' <div class="w-100"></div>'
     )
@@ -40,29 +43,29 @@ function makeURL() {
     // Reset form
     $('#cardForm').trigger("reset");
     $('.injectedForm').remove();
-    $("#submitButton").replaceWith(
+    $("#cardForm").append(
         '<button id="initButton" onclick="newRow()" class="btn btn-primary">Add link</button>'
     )
-        return validUrl
+    return validUrl
 }
 
 //Cross-browser function to select content
 function SelectText(element) {
     var doc = document;
     if (doc.body.createTextRange) {
-      var range = document.body.createTextRange();
-      range.moveToElementText(element);
-      range.select();
+        var range = document.body.createTextRange();
+        range.moveToElementText(element);
+        range.select();
     } else if (window.getSelection) {
-      var selection = window.getSelection();
-      var range = document.createRange();
-      range.selectNodeContents(element);
-      selection.removeAllRanges();
-      selection.addRange(range);
+        var selection = window.getSelection();
+        var range = document.createRange();
+        range.selectNodeContents(element);
+        selection.removeAllRanges();
+        selection.addRange(range);
     }
-  }
+}
 
-  $(".copyable").click(function(e) {
+$(".copyable").click(function (e) {
     //Make the container Div contenteditable
     $(this).attr("contenteditable", true);
     //Select the image
@@ -76,4 +79,4 @@ function SelectText(element) {
     $(this).removeAttr("contenteditable");
     //Success!!
     alert("QR-code is copied to your clipboard!");
-  });
+});

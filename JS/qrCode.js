@@ -623,10 +623,10 @@
     var url = String(makeURL())
     console.log(url)
     var qrcode = new QRCode(document.getElementById("qrcode"), {
-        width: 420,
-        height: 420,
+        width: 350,
+        height:350,
         text: url,
-        correctLevel : QRCode.CorrectLevel.H}
+        correctLevel : QRCode.CorrectLevel.L}
     );
 
 });

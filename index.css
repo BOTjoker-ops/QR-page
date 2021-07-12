@@ -1,21 +1,33 @@
+html body {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ddd;
+    align-items: center !important;
+
+}
+/* Profile */
 .profileInfo {
     font-size: 40px;
     font-family: Verdana;
-    margin-bottom: 15px;
-    margin-top: 2%;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
 }
 
-#divForm {
-    margin-left: 25%;
-    margin-right: 25%;
-    position: relative;
-
+#nameDisplay {
+    padding-top: 1vh;
 }
 
+/* Cards */
 .cardTitle {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 14%;
-    padding-top: 4%;
+    padding-left: 10vw;
+    padding-top: 1vw;
+}
+
+/* Form */
+#divForm {
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
 }
 
 .list-group-item {
@@ -23,34 +35,17 @@
 }
 
 
+
 /* QR generator */
-
-.qr-code-generator {
-    width: 500px;
-    margin: 0 auto;
-    }
-    
-    .qr-img {
-        padding-left: 30%;
-    }
-
-    .qr-code-generator * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    }
     
     #qrcode {
-    width: 128px;
-    height: 128px;
-    margin: 0;
+    width: 1px;
+    height: 1px;
+    padding-top: 20px;
+    padding-bottom: 500px;
     text-align: center;
     }
-    
-    #qrcode a {
-    font-size: 0.8em;
-    }
-    
+        
     .qr-url, .qr-size {
     padding: 0.5em;
     border: 1px solid #ddd;
@@ -68,14 +63,19 @@
     width: 20%;
     }
     
-    .generate-qr-code {
-    display: block;
-    width: 100%;
-    margin: 0.5em 0 0;
-    padding: 0.25em;
+    button.generate-qr-code {
+        margin-left: 20vw;
+        margin-right: 20vw;
+    margin-top: 2vh;
+    width: 40vw;
     font-size: 1.2em;
     border: none;
     cursor: pointer;
     background-color: #e5554e;
     color: #fff;
+    }
+
+    img.qr-img.copyable{
+        max-width: 80vw;
+        max-height: 80vw;
     }

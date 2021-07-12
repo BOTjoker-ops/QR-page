@@ -3,13 +3,12 @@
 $(function () {
     var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
     if (hashes.length <= 1) {
-        hashes = ["name=Stijn van der Pouw", "LinkedIn=https://www.linkedin.com/in/stijnvdpouw/", "&"];
+        hashes = ["name=Stijn van der Pouw", "picture=https://media-exp1.licdn.com/dms/image/C4E03AQERpcRM_L_iIQ/profile-displayphoto-shrink_800_800/0/1625171764329?e=1631750400&v=beta&t=AWh3ER3o9mmaX2oEHYzsst3eMjy21giEgVDntM_vRd8", "LinkedIn=https://www.linkedin.com/in/stijnvdpouw/", "&"];
     }
     
     for (var i = 0; i < hashes.length - 1; i++) {
         cardInfo = hashes[i].split('=');
         
-        console.log(cardInfo + i)
         if (i == 0) {
             document.getElementById("nameDisplay").innerHTML = decodeURI(cardInfo[1]);
         } 

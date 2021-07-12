@@ -78,4 +78,6 @@ html body {
     img.qr-img.copyable{
         max-width: 80vw;
         max-height: 80vw;
+        min-width: 40vw;
+        min-height: 40vw;
     }

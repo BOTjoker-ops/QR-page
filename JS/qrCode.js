@@ -1434,7 +1434,7 @@ $('.generate-qr-code').on('click', function () {
         width: 350,
         height: 350,
         text: url,
-        correctLevel: QRCode.CorrectLevel.M
+        correctLevel: QRCode.CorrectLevel.H
     });
 
 });

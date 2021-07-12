@@ -4,6 +4,7 @@ html body {
     align-items: center !important;
 
 }
+
 /* Profile */
 .profileInfo {
     font-size: 40px;
@@ -19,8 +20,16 @@ html body {
 /* Cards */
 .cardTitle {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 10vw;
-    padding-top: 1vw;
+    padding-top: 16px;
+}
+
+#links{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img {
+    padding: 20px;
 }
 
 /* Form */
@@ -37,35 +46,36 @@ html body {
 
 
 /* QR generator */
-    
-    #qrcode {
+
+#qrcode {
     width: 1px;
     height: 1px;
     padding-top: 20px;
     padding-bottom: 500px;
     text-align: center;
-    }
-        
-    .qr-url, .qr-size {
+}
+
+.qr-url,
+.qr-size {
     padding: 0.5em;
     border: 1px solid #ddd;
     border-radius: 2px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    }
-    
-    .qr-url {
+}
+
+.qr-url {
     width: 79%;
-    }
-    
-    .qr-size {
+}
+
+.qr-size {
     width: 20%;
-    }
-    
-    button.generate-qr-code {
-        margin-left: 20vw;
-        margin-right: 20vw;
+}
+
+button.generate-qr-code {
+    margin-left: 20vw;
+    margin-right: 20vw;
     margin-top: 2vh;
     width: 40vw;
     font-size: 1.2em;
@@ -73,11 +83,9 @@ html body {
     cursor: pointer;
     background-color: #e5554e;
     color: #fff;
-    }
+}
 
-    img.qr-img.copyable{
-        max-width: 80vw;
-        max-height: 80vw;
-        min-width: 40vw;
-        min-height: 40vw;
-    }
+img.qr-img.copyable {
+    max-width: 80vw;
+    max-height: 80vw;
+}

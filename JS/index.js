@@ -1,5 +1,5 @@
 var port = location.port || (location.protocol === 'https:' ? '443' : '80');
-var publicIp = 'http://192.168.178.55/QR-page/'
+var publicIp = '192.168.178.55/QR-page'
 const domainName = publicIp
 
 function newRow() {

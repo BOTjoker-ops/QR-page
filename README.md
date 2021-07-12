@@ -1,2 +1,2 @@
 # QR-cards
-show dynamic info-cards, depended on url. Generator included
+show dynamic visit-cards, depended on url. QR generator included

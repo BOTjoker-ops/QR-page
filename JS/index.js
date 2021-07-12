@@ -1,6 +1,6 @@
 var port = location.port || (location.protocol === 'https:' ? '443' : '80');
-var publicIp = '127.0.0.1'
-const domainName = publicIp + ':' + port
+var publicIp = 'http://192.168.178.55/QR-page/'
+const domainName = publicIp
 
 function newRow() {
     $('#newEntry').remove();
@@ -26,6 +26,7 @@ function makeURL() {
     $(inputs).each(function (e) {
         data.push($(this).val());
     })
+    console.log(data)
     data.forEach(function (x, i) {
         x = encodeURI(x)
         if (i != 0) {
@@ -49,6 +50,8 @@ function makeURL() {
     return validUrl
 }
 
+
+// Copyable qr-code
 //Cross-browser function to select content
 function SelectText(element) {
     var doc = document;

@@ -23,7 +23,7 @@ html body {
     padding-top: 16px;
 }
 
-#links{
+#links {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -43,7 +43,14 @@ img {
     padding: 0 !important;
 }
 
+.form-control.col.injectedForm {
+    margin-top: 1vh;
+}
 
+#newEntry {
+    margin-top: 1vh;
+
+}
 
 /* QR generator */
 

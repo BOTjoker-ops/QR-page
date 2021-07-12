@@ -5,15 +5,12 @@ const domainName = publicIp
 function newRow() {
     $('#newEntry').remove();
     $(".form-inline").append(
-        '<br class="injectedForm">' +
         '<input type="label" class="form-control col injectedForm" placeholder="Label">' +
         '<input type="link" class="form-control col injectedForm" value="https://">' +
         '<button id="newEntry" onclick="newRow()" class="btn btn-primary injectedForm">Add link</button>' +
-        ' <div class="w-100"></div>'
+        ' <div class="w-100 injectedForm"></div>'
     )
-    $("#initButton").replaceWith(
-        '<br>'
-    )
+    $("#initButton").remove()
 }
 
 function makeURL() {

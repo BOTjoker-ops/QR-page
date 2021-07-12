@@ -26,7 +26,6 @@ function makeURL() {
     $(inputs).each(function (e) {
         data.push($(this).val());
     })
-    console.log(data)
     data.forEach(function (x, i) {
         x = encodeURI(x)
         if (i != 0) {
@@ -37,7 +36,7 @@ function makeURL() {
                 validUrl = validUrl.concat(x + '&');
             }
         } else {
-            validUrl = validUrl.concat(x);
+            validUrl = validUrl.concat(x + '&picture=');
         }
     })
 

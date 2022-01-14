@@ -1,4 +1,3 @@
-var port = location.port || (location.protocol === 'https:' ? '443' : '80');
 const domainName = 'stijn.hopto.org/qr'
 
 function newRow() {

@@ -1,6 +1,5 @@
 var port = location.port || (location.protocol === 'https:' ? '443' : '80');
-var publicIp = '82.217.9.42/qr'
-const domainName = publicIp
+const domainName = 'http://stijn.hopto.org/qr'
 
 function newRow() {
     $('#newEntry').remove();

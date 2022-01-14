@@ -76,5 +76,5 @@ $(".copyable").click(function (e) {
     //Make the container Div uneditable again
     $(this).removeAttr("contenteditable");
     //Success!!
-    alert("QR-code is copied to your clipboard!");
+    alert("QR-code is copied to your clipboard! and the link is console logged");
 });
